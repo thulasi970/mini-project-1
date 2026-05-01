@@ -1,0 +1,22 @@
+ body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+}
+.app-container{
+    width: 100px;
+    margin:auto;
+    background: lightgreen;
+    border-radius: 10px;
+    padding: 20px;
+}
+.input-container{
+    display: flex;
+    gap:10px;
+    margin-bottom: 20px;
+}
+#taskInput{
+    border-radius: 5px;
+    border:1px solid;
+}
