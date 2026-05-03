@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h2> TO-DO list</h2>
-        </header>
-        <section class="input">
-         <input type="text" id="task input" placeholder="study html basics" aria-lable="Newtask">
-         <button id="addtaskbutton">"study css"</button>
-        </section>
-        <nav class="filter.controls">
-            <button class="filter_button active" data filter ="all">All</button> 
-            <button class="filter_button active" data filter ="pending">pending</button>
-            <button class="filter_button active" data filter ="incomplete">incomplete</button>
-        </nav>
-        <ul id="taskList">
-        </ul>
 
+<button id="themeToggle">🌙</button>
+
+<div class="app">
+  <div class="header">
+    <h2>Thulasi's Task List</h2>
+    <p id="stats">0 Total • 0 Pending • 0 Completed</p>
+  </div>
+
+  <div class="body">
+    <div class="add-box">
+      <input type="text" id="taskInput" placeholder="Enter your task">
+      <button id="addBtn">Add Task</button>
     </div>
-    <script src="script.js"></script>
-    
+
+    <div class="filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+</div>
+
+<div id="notification" class="Notification"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-    
-    
-
-    
