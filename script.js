@@ -114,7 +114,6 @@ function escapeHtml(text) {
 
 const toggleBtn = document.getElementById("themeToggle");
 
-// load saved theme
 if (localStorage.getItem("theme") === "light") {
     document.body.classList.add("light");
     toggleBtn.textContent = "☀️";
